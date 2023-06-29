@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group = 'one.bartosz'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.github.Minestom:Minestom:954e8b3915'
+}
+
+test {
+    useJUnitPlatform()
+}
+jar {
+    manifest {
+        attributes 'Main-Class': 'one.bartosz.mcpingtestserver.McPingTestServer'
+    }
+}
