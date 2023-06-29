@@ -25,3 +25,6 @@ jar {
         attributes 'Main-Class': 'one.bartosz.mcpingtestserver.McPingTestServer'
     }
 }
+shadowJar {
+    archiveFileName = 'mcpingtest-server.jar'
+}
