@@ -18,4 +18,5 @@ The server is pretty easy to set up:
 1. Download the latest JAR file [here](https://github.com/bartosz11/mcpingtest-standalone/releases/latest).
 2. Start the server with ``java -jar mcpingtest-server.jar``. You can add a RAM limit or other flags as you wish.
 3. Connect to ``localhost:25565``.  
+
 Optionally, you can edit the config that was generated in ``config.properties``. All props have comments describing what they do.
